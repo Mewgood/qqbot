@@ -1,0 +1,281 @@
+# depslib dependency file v1.0
+1220490340 source:/home/gary/qqbot/heroin/bit_reader.cpp
+	<iostream>
+	<heroin/bit_reader.hpp>
+	<heroin/utility.hpp>
+	<nil/memory.hpp>
+	<nil/exception.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/bsha1.cpp
+	<heroin/bsha1.hpp>
+	<nil/array.hpp>
+	<heroin/utility.hpp>
+
+1242983628 source:/home/gary/qqbot/heroin/chat_server.cpp
+	<heroin/client.hpp>
+	<iostream>
+	<nil/array.hpp>
+	<nil/time.hpp>
+	<nil/string.hpp>
+	<nil/random.hpp>
+	<heroin/utility.hpp>
+	<heroin/check_revision.hpp>
+	<heroin/bsha1.hpp>
+	<heroin/d2cdkey.hpp>
+	<heroin/compression.hpp>
+
+1239915321 source:/home/gary/qqbot/heroin/check_revision.cpp
+	<iostream>
+	<heroin/check_revision.hpp>
+	<heroin/utility.hpp>
+	<nil/string.hpp>
+	<nil/array.hpp>
+	<nil/file.hpp>
+
+1243750777 source:/home/gary/qqbot/heroin/client.cpp
+	<heroin/client.hpp>
+	<iostream>
+	<cmath>
+	<nil/string.hpp>
+	<nil/time.hpp>
+	<heroin/utility.hpp>
+	<heroin/item_data.hpp>
+	<heroin/bsha1.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/compression.cpp
+	<iostream>
+
+1242693273 source:/home/gary/qqbot/heroin/container.cpp
+	<iostream>
+	<heroin/container.hpp>
+	<heroin/item_data.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/d2cdkey.cpp
+	<heroin/d2cdkey.hpp>
+	<heroin/utility.hpp>
+	<heroin/bsha1.hpp>
+	<nil/string.hpp>
+	<iostream>
+
+1222730556 source:/home/gary/qqbot/heroin/data_manager.cpp
+	<iostream>
+	<map>
+	<heroin/data_manager.hpp>
+	<heroin/utility.hpp>
+	<nil/file.hpp>
+	<nil/string.hpp>
+	<nil/array.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/game.cpp
+	<cmath>
+	<sstream>
+	<heroin/game.hpp>
+
+1243673915 source:/home/gary/qqbot/heroin/game_server.cpp
+	<heroin/client.hpp>
+	<iostream>
+	<nil/array.hpp>
+	<nil/random.hpp>
+	<nil/time.hpp>
+	<nil/string.hpp>
+	<heroin/utility.hpp>
+	<heroin/compression.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/item.cpp
+	<heroin/item.hpp>
+
+1243713027 source:/home/gary/qqbot/heroin/item_action.cpp
+	<iostream>
+	<string>
+	<heroin/client.hpp>
+	<heroin/bit_reader.hpp>
+	<heroin/utility.hpp>
+	<heroin/item_data.hpp>
+	<nil/array.hpp>
+	<nil/string.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/item_data.cpp
+	<iostream>
+	<sstream>
+	<heroin/item_data.hpp>
+	<heroin/utility.hpp>
+	<heroin/game.hpp>
+	<nil/array.hpp>
+
+1220490340 source:/home/gary/qqbot/heroin/item_string.cpp
+	<iostream>
+	<sstream>
+	<nil/string.hpp>
+	<heroin/client.hpp>
+	<heroin/utility.hpp>
+
+1224312014 source:/home/gary/qqbot/heroin/npc.cpp
+	<iostream>
+	<cmath>
+	<heroin/client.hpp>
+	<heroin/bit_reader.hpp>
+	<heroin/utility.hpp>
+	<heroin/game.hpp>
+	<nil/string.hpp>
+
+1242974380 source:/home/gary/qqbot/heroin/realm_server.cpp
+	<heroin/client.hpp>
+	<iostream>
+	<nil/array.hpp>
+	<nil/random.hpp>
+	<nil/time.hpp>
+	<nil/string.hpp>
+	<heroin/utility.hpp>
+	<heroin/check_revision.hpp>
+	<heroin/bsha1.hpp>
+	<heroin/d2cdkey.hpp>
+	<heroin/compression.hpp>
+
+1223960395 source:/home/gary/qqbot/heroin/utility.cpp
+	<heroin/utility.hpp>
+	<iostream>
+	<sstream>
+	<nil/time.hpp>
+	<nil/random.hpp>
+	<nil/environment.hpp>
+
+1243638236 source:/home/gary/qqbot/main.cpp
+	<iostream>
+	<nil/ini.hpp>
+	<heroin/client.hpp>
+	<heroin/utility.hpp>
+	<heroin/lua.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/clipboard.cpp
+	<nil/clipboard.hpp>
+	<cstdlib>
+	<nil/windows.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/console.cpp
+	<nil/console.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/crc32.cpp
+	<nil/crc32.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/debug.cpp
+	<nil/debug.hpp>
+	<nil/windows.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/exception.cpp
+	<nil/exception.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/file.cpp
+	<nil/file.hpp>
+	<nil/string.hpp>
+	<nil/environment.hpp>
+	<cstddef>
+	<nil/windows.hpp>
+	<sys/stat.h>
+	<sys/types.h>
+	<dirent.h>
+	<iostream>
+
+1220490362 source:/home/gary/qqbot/nil/graphics.cpp
+	<nil/graphics.hpp>
+	<nil/string.hpp>
+	<nil/thread.hpp>
+	<nil/debug.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/gui.cpp
+
+1220490362 source:/home/gary/qqbot/nil/http.cpp
+	<nil/http.hpp>
+	<nil/string.hpp>
+	<nil/types.hpp>
+	<nil/file.hpp>
+	<sstream>
+
+1223711100 source:/home/gary/qqbot/nil/ini.cpp
+	<nil/ini.hpp>
+	<iostream>
+
+1220490362 source:/home/gary/qqbot/nil/math.cpp
+	<nil/math.hpp>
+	<sstream>
+	<iostream>
+	<cmath>
+	<functional>
+	<algorithm>
+	<deque>
+	<nil/string.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/memory.cpp
+	<nil/memory.hpp>
+
+1242974007 source:/home/gary/qqbot/nil/net.cpp
+	<nil/net.hpp>
+	<nil/memory.hpp>
+	<nil/thread.hpp>
+	<nil/debug.hpp>
+	<iostream>
+	<sstream>
+
+1220490362 source:/home/gary/qqbot/nil/random.cpp
+	<nil/random.hpp>
+	<algorithm>
+	<vector>
+	<nil/array.hpp>
+	<nil/windows.hpp>
+	<nil/time.hpp>
+
+1220490362 source:/home/gary/qqbot/nil/string.cpp
+	<nil/string.hpp>
+
+1223968437 source:/home/gary/qqbot/nil/thread.cpp
+	<nil/thread.hpp>
+	<process.h>
+	<iostream>
+
+1220490362 source:/home/gary/qqbot/nil/time.cpp
+	<nil/time.hpp>
+	<ctime>
+	<sstream>
+	<nil/environment.hpp>
+	<nil/windows.hpp>
+	<sys/time.h>
+	<sys/times.h>
+	<iostream>
+
+1242106038 source:/home/gary/qqbot/heroin/lua.cpp
+	<iostream>
+	<heroin/client.hpp>
+	<heroin/utility.hpp>
+	<heroin/lua.hpp>
+
+1242105975 source:/home/gary/qqbot/luawrapper.cpp
+	"stdlib.h"
+	"string.h"
+	"tolua++.h"
+	"heroin/client.hpp"
+
+1243567836 /home/gary/qqbot/heroin/client.hpp
+	<string>
+	<map>
+	<vector>
+	<deque>
+	<nil/net.hpp>
+	<nil/thread.hpp>
+	<nil/ini.hpp>
+	<heroin/bit_reader.hpp>
+	<heroin/game.hpp>
+	<heroin/skills.hpp>
+	<heroin/item.hpp>
+	<heroin/container.hpp>
+	<heroin/types.hpp>
+	<heroin/data_manager.hpp>
+	<heroin/packetdef.hpp>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+
+1242103862 /home/gary/qqbot/tolua++.h
+	"lua.h"
+	"lauxlib.h"
+
+1242106283 /home/gary/qqbot/luawrapper.hpp
+

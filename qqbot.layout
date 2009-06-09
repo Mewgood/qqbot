@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="heroin/bit_reader.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="994" topLine="28" />
+	</File>
+	<File name="heroin/bsha1.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3696" topLine="136" />
+	</File>
+	<File name="heroin/chat_server.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="5199" topLine="167" />
+	</File>
+	<File name="heroin/client.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="8861" topLine="312" />
+	</File>
+	<File name="heroin/client.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="444" topLine="10" />
+	</File>
+	<File name="heroin/container.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="694" topLine="0" />
+	</File>
+	<File name="heroin/container.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="476" topLine="6" />
+	</File>
+	<File name="heroin/data_manager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3208" topLine="165" />
+	</File>
+	<File name="heroin/game_server.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="13993" topLine="510" />
+	</File>
+	<File name="heroin/item.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1019" topLine="63" />
+	</File>
+	<File name="heroin/item_action.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="5765" topLine="33" />
+	</File>
+	<File name="heroin/realm_server.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1417" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="108" topLine="0" />
+	</File>
+	<File name="nil/file.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3154" topLine="160" />
+	</File>
+	<File name="nil/ini.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1980" topLine="86" />
+	</File>
+	<File name="nil/net.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3620" topLine="162" />
+	</File>
+</CodeBlocks_layout_file>

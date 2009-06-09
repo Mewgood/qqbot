@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="qqbot" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/qqbot" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-I/home/gary/qqbot/" />
+				</Compiler>
+				<Linker>
+					<Add option="-I/home/gary/qqbot/" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/qqbot" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-I/home/gary/qqbot/" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-I/home/gary/qqbot/" />
+				</Linker>
+			</Target>
+			<Target title="Windows Release">
+				<Option output="bin/Windows/qqbot.exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Windows/" />
+				<Option type="1" />
+				<Option compiler="mingw_on_ubuntu" />
+				<Compiler>
+					<Add option="-I/home/gary/qqbot/" />
+				</Compiler>
+				<Linker>
+					<Add option="-I/home/gary/qqbot/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="heroin/bit_reader.cpp" />
+		<Unit filename="heroin/bit_reader.hpp" />
+		<Unit filename="heroin/bsha1.cpp" />
+		<Unit filename="heroin/bsha1.hpp" />
+		<Unit filename="heroin/chat_server.cpp" />
+		<Unit filename="heroin/check_revision.cpp" />
+		<Unit filename="heroin/check_revision.hpp" />
+		<Unit filename="heroin/client.cpp" />
+		<Unit filename="heroin/client.hpp" />
+		<Unit filename="heroin/compression.cpp" />
+		<Unit filename="heroin/compression.hpp" />
+		<Unit filename="heroin/container.cpp" />
+		<Unit filename="heroin/container.hpp" />
+		<Unit filename="heroin/d2cdkey.cpp" />
+		<Unit filename="heroin/d2cdkey.hpp" />
+		<Unit filename="heroin/data_manager.cpp" />
+		<Unit filename="heroin/data_manager.hpp" />
+		<Unit filename="heroin/game.cpp" />
+		<Unit filename="heroin/game.hpp" />
+		<Unit filename="heroin/game_server.cpp" />
+		<Unit filename="heroin/item.cpp" />
+		<Unit filename="heroin/item.hpp" />
+		<Unit filename="heroin/item_action.cpp" />
+		<Unit filename="heroin/item_data.cpp" />
+		<Unit filename="heroin/item_data.hpp" />
+		<Unit filename="heroin/item_string.cpp" />
+		<Unit filename="heroin/npc.cpp" />
+		<Unit filename="heroin/packetdef.hpp" />
+		<Unit filename="heroin/pickit.h" />
+		<Unit filename="heroin/realm_server.cpp" />
+		<Unit filename="heroin/skills.hpp" />
+		<Unit filename="heroin/types.hpp" />
+		<Unit filename="heroin/utility.cpp" />
+		<Unit filename="heroin/utility.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="nil/array.hpp" />
+		<Unit filename="nil/clipboard.cpp" />
+		<Unit filename="nil/clipboard.hpp" />
+		<Unit filename="nil/console.cpp" />
+		<Unit filename="nil/console.hpp" />
+		<Unit filename="nil/crc32.cpp" />
+		<Unit filename="nil/crc32.hpp" />
+		<Unit filename="nil/debug.cpp" />
+		<Unit filename="nil/debug.hpp" />
+		<Unit filename="nil/environment.hpp" />
+		<Unit filename="nil/exception.cpp" />
+		<Unit filename="nil/exception.hpp" />
+		<Unit filename="nil/file.cpp" />
+		<Unit filename="nil/file.hpp" />
+		<Unit filename="nil/function.hpp" />
+		<Unit filename="nil/function_generator.hpp" />
+		<Unit filename="nil/graphics.cpp" />
+		<Unit filename="nil/graphics.hpp" />
+		<Unit filename="nil/gui.cpp" />
+		<Unit filename="nil/gui.hpp" />
+		<Unit filename="nil/http.cpp" />
+		<Unit filename="nil/http.hpp" />
+		<Unit filename="nil/ini.cpp" />
+		<Unit filename="nil/ini.hpp" />
+		<Unit filename="nil/math.cpp" />
+		<Unit filename="nil/math.hpp" />
+		<Unit filename="nil/memory.cpp" />
+		<Unit filename="nil/memory.hpp" />
+		<Unit filename="nil/net.cpp" />
+		<Unit filename="nil/net.hpp" />
+		<Unit filename="nil/random.cpp" />
+		<Unit filename="nil/random.hpp" />
+		<Unit filename="nil/string.cpp" />
+		<Unit filename="nil/string.hpp" />
+		<Unit filename="nil/thread.cpp" />
+		<Unit filename="nil/thread.hpp" />
+		<Unit filename="nil/time.cpp" />
+		<Unit filename="nil/time.hpp" />
+		<Unit filename="nil/types.hpp" />
+		<Unit filename="nil/windows.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
