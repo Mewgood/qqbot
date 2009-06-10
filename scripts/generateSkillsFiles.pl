@@ -6,25 +6,24 @@ sub main {
     my $heroinDir = "../heroin/";
     my $skillDataFile = $dataDir . "skills.txt";
     my $skillHppFile  = $heroinDir . "skills.hpp";
-    parseSkill($skillDataFile, $skillHppFile);
+    my $skillCppFile  = $heroinDir . "skills.cpp";
+    parseSkill($skillDataFile, $skillHppFile, $skillCppFile);
 }
 
 sub parseSkill {
-    my $inFile = shift;
-    my $outFile = shift;
+    my $inFile  = shift;
+    my $hppFile = shift;
+    my $cppFile = shift;
     if (! -f $inFile) {
         die("cannot find skill file at $inFile\n");
     }
 
     my @skillList;
-    open FOO, "<" . $inFile;
-    while (my $skill = <FOO>) {
-        chomp($skill);
+    foreach my $skill (split /\n/, readFromFile($inFile)) {
         $skill = lc($skill);
         $skill =~ s/[\s\-]/_/gs;
         push @skillList, $skill;
     }
-    close FOO;
 
     my @enumList;
     for(my $i=0; $i < $#skillList; $i++) {
@@ -35,33 +34,40 @@ sub parseSkill {
         push @enumList, $enum;
     }
 
-    my $out = join("\n", @enumList);
-    my $template = getSkillTemplate();
-    $template =~ s/\[\%list\%\]/$out/;
+    my $enumList = join("\n", @enumList);
+    my $template = getSkillsHppTemplate();
+    $template =~ s/\[\%enumList\%\]/$enumList/;
 
-    print "writing skills file to $outFile\n";
-    writeToFile($template, $outFile);
+    print "writing skills hpp file $hppFile\n";
+    writeToFile($template, $hppFile);
+
+    my @switchList;
+    for(my $i=0; $i < $#skillList; $i++) {
+        my $skillWithColon = $skillList[$i] . ":";
+        push @switchList, 
+            "    case " . 
+            sprintf("%-30s // %4d 0x%04x\n", $skillWithColon, $i, $i) .
+            "        return \"" . $skillList[$i] . "\";\n" .
+            "        break;\n";
+    }
+    my $switchList = join("", @switchList);
+    my $cppTemplate = getSkillsCppTemplate();
+    $cppTemplate =~ s/\[\%switchList\%\]/$switchList/;
+
+    print "writing skills cpp file $cppFile\n";
+    writeToFile($cppTemplate, $cppFile);
+
 }
 
-sub getSkillTemplate {
-    my $template = <<END;
-// Do not modify
-// Generated from $0
-// list stolen from D2BS SDK, run through a Python script to generate enums
-#ifndef SKILLS_HPP
-#define SKILLS_HPP
-namespace skill
-{
-    enum skill_type 
-    {
-[%list%]
-    };
-}
 
-using skill::skill_type;
-#endif
-END
-    return $template;
+sub readFromFile {
+    my $inFile = shift;
+    local $/=undef;
+    open FILE, $inFile or die "Couldn't open $inFile: $!";
+    binmode FILE;
+    my $string = <FILE>;
+    close FILE;
+    return $string;
 }
 
 sub writeToFile {
@@ -70,6 +76,41 @@ sub writeToFile {
     open FOO, ">" . $outFile;
     print FOO $str;
     close FOO;
+}
+
+sub getSkillsHppTemplate {
+    return <<END;
+// Do not modify. Generated from $0
+// list stolen from D2BS SDK, run through a Python script to generate enums
+#ifndef SKILLS_HPP
+#define SKILLS_HPP
+#include <string>
+namespace skill
+{
+    enum skill_type 
+    {
+[%enumList%]
+    };
+    std::string skill_to_string(skill_type type);
+}
+#endif
+END
+}
+
+sub getSkillsCppTemplate {
+    return <<END;
+// Do not modify. Generated from $0
+#include <heroin/skills.hpp>
+#include <string>
+std::string skill::skill_to_string(skill_type type) {
+    switch(type) {
+[%switchList%]
+    default:
+        return "unknown";
+        break;
+    }
+}
+END
 }
 
 main();

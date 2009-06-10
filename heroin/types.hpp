@@ -8,6 +8,8 @@
 #include <heroin/skills.hpp>
 #include <heroin/game.hpp>
 
+using namespace skill;
+
 typedef std::map<ulong, player> player_map;
 typedef std::map<skill_type, ulong> skill_map;
 typedef std::deque<bool> bool_line;

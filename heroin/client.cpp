@@ -9,7 +9,7 @@
 #include <heroin/utility.hpp>
 #include <heroin/item_data.hpp>
 #include <heroin/bsha1.hpp>
-
+#include <heroin/skills.hpp>
 
 extern std::string const
 null("\x00\x00\x00\x00", 4),
@@ -522,7 +522,9 @@ std::string d2_client::skill_levels_to_string() {
         if (iter->second == 0) {
             continue;
         }
-        out << iter->first << " " << iter->second << "\n";
+        
+        out << skill::skill_to_string(iter->first)
+            << " " << iter->second << "\n";
     }
     return out.str();
 }

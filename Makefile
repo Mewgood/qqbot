@@ -29,6 +29,7 @@ OBJS = \
 	heroin/item_string.o \
 	heroin/npc.o \
 	heroin/realm_server.o \
+	heroin/skills.o \
 	heroin/utility.o \
 	nil/clipboard.o \
 	nil/console.o \
@@ -80,6 +81,7 @@ LOBJS = main.o \
 	memory.o \
 	net.o \
 	random.o \
+	skills.o \
 	string.o \
 	thread.o \
 	time.o
